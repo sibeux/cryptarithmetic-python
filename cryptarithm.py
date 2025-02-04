@@ -1,63 +1,3 @@
-# Cryptarithmetic Puzzle Solver
-
-## Description
-
-This repository contains a simple Python program to solve cryptarithmetic puzzles. Cryptarithmetic puzzles involve mathematical equations where letters replace digits. The task is to find the unique digit for each letter such that the equation holds true.
-
-## Features
-
-- Supports custom cryptarithmetic puzzles.
-- Evaluates all possible digit combinations.
-- Skips invalid mappings (e.g., leading zeros).
-- Efficiently finds and displays the correct solution if it exists.
-
-## Example Puzzle
-
-```
-AB + AB == BCC
-```
-
-**Sample Solution:**
-
-```
-61 + 61 = 122
-```
-
-## How to Use
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/sibeux/cryptarithmetic-python.git
-   ```
-
-2. Navigate to the project directory:
-
-   ```bash
-   cd cryptarithmetic-python
-   ```
-
-3. Run the program:
-
-   ```bash
-   cryptarithm.py
-   ```
-
-4. Enter your puzzle when prompted, e.g., `AB + AB = BCC`.
-
-## Requirements
-
-- Python 3.6 or higher
-
-## How It Works
-
-1. Extracts unique letters from the puzzle.
-2. Generates all possible digit permutations.
-3. Evaluates each permutation to find the correct solution.
-
-## Code Example
-
-```python
 from itertools import product
 
 input1 = str(input("Enter the first letter: "))
@@ -126,5 +66,3 @@ for i in combInput1:
                     print(f"{bilA} + {bilB} = {hasil}")
 
 print(f"Total Penyelesaian: {totalPenyelesaian}")
-
-```
